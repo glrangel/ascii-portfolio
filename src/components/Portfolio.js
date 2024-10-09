@@ -7,7 +7,7 @@ function Portfolio () {
     const isDesktop = useMediaQuery({ query: '(min-width: 1000px)' });
 
     return (
-        <motion.div id="portfolio"
+        <motion.div id="portfolio" class={!isDesktop && "overflow-main"}
             initial={{y: 5, opacity: 0}}
             animate={{y: 0, opacity: 1}}
             transition={{duration: 2, type: 'spring', stiffness: 30}}

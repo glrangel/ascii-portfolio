@@ -7,13 +7,14 @@ function Contact () {
             animate={{y: 0, opacity: 1}}
             transition={{duration: 2, type: 'spring', stiffness: 30}}
             exit={{opacity: 0}}
-            style={{backgroundColor: 'rgba(0,0,0,0.8)'}}
+            
         >
-            <h1>Contact</h1>
-            <p>email</p>
-            <p>glrangel25@gmail.com</p>
-            <p>github</p>
-            <p>glrangel25@gmail.com</p>
+            <div style={{backgroundColor: 'rgba(0,0,0,0.85)', padding: '10px'}}>
+                <p class="contact-title">email</p>
+                <p class="contact-data">glrangel25@gmail.com</p>
+                <p class="contact-title">github</p>
+                <p class="contact-data">glrangel</p>
+            </div>
 
             
         </motion.div>

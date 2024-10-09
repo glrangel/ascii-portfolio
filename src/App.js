@@ -18,13 +18,32 @@ import MediaQuery from 'react-responsive';
 const App = () => {
   const isDesktop = useMediaQuery({ query: '(min-width: 1000px)' });
 const isMobile = useMediaQuery({ query: '(max-width: 1000px)' });
+let test = useLocation().pathname;
+
   return (
     <div id="app-container"> 
       <div id={isDesktop ? "title" : "mobile-title"}>
         <h1 style={{color: "grey", fontSize: isMobile && "xx-large"}}>gabriel rangel</h1>
         <h1 style={{color: "#179ff4", fontSize: isMobile && "x-large"}}>fullstack web developer </h1>
       </div>
-      <div id="main" class={isDesktop ? "absolute" : "overflow-main"}>
+      <div id="route-name">
+        <h1>{test}</h1>
+      </div>
+      <div id="main" class={isDesktop ? "absolute" : "overflow-main mobile-main"}>
+        <nav id={isDesktop ? "navbar" : "mobile-navbar"} class={isDesktop && "absolute"}>
+          <motion.a whileHover={{ rotate: '-2deg'}} transition={{duration: 1}}>
+            <NavLink to="/home" >home</NavLink>
+          </motion.a>
+          <motion.a whileHover={{ rotate: '-2deg'}} transition={{duration: 1}}>
+            <NavLink to="/portfolio" >portfolio</NavLink>
+          </motion.a>
+          <motion.a whileHover={{ rotate: '-2deg'}} transition={{duration: 1}}>
+            <NavLink to="/contact" >contact</NavLink>
+          </motion.a>
+          <motion.a whileHover={{ rotate: '-2deg'}} transition={{duration: 1}}>
+            <NavLink to="https://www.gabrielrangel.dev/static/Resume-da887049675c4b7669fbbc4e34d22c11.pdf" target="_blank" rel="noopener noreferrer" >resume</NavLink>
+          </motion.a>
+        </nav>
         <AnimatePresence>
           <Routes>
                 <Route path="/home" element={<Home />} />
@@ -34,20 +53,6 @@ const isMobile = useMediaQuery({ query: '(max-width: 1000px)' });
           </Routes >
         </AnimatePresence>
       </div>
-      <nav id={isDesktop ? "navbar" : "mobile-navbar"} class={isDesktop && "absolute"}>
-        <motion.a whileHover={{ rotate: '-2deg'}} transition={{duration: 1}}>
-          <NavLink to="/home" >home</NavLink>
-        </motion.a>
-        <motion.a whileHover={{ rotate: '-2deg'}} transition={{duration: 1}}>
-          <NavLink to="/portfolio" >portfolio</NavLink>
-        </motion.a>
-        <motion.a whileHover={{ rotate: '-2deg'}} transition={{duration: 1}}>
-          <NavLink to="/contact" >contact</NavLink>
-        </motion.a>
-        <motion.a whileHover={{ rotate: '-2deg'}} transition={{duration: 1}}>
-          <NavLink to="https://www.gabrielrangel.dev/static/Resume-da887049675c4b7669fbbc4e34d22c11.pdf" target="_blank" rel="noopener noreferrer" >resume</NavLink>
-        </motion.a>
-      </nav>
       <Background />
     </div>
   );
