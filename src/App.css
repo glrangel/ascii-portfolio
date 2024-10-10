@@ -168,6 +168,7 @@ a.active {
   justify-content: center;
   h1 {
     background-color: blue;
+    font-size: x-large;
   }
 }
 #portfolio-card {

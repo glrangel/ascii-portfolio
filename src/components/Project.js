@@ -16,7 +16,7 @@ function Project (props) {
             transition={{duration: '1'}} 
             target="_blank" 
             rel="noopener noreferrer"
-            style={isMobile && {width: width, height: "175px", marginTop: '5px'}}
+            style={isMobile && {width: width, marginTop: '5px'}}
         >
             <div>
                 <p style={{fontSize: '20px', backgroundColor: 'blue', width: 'min-content', padding: '10px'}}>{title}</p>
