@@ -116,16 +116,17 @@ h1 {
   margin: 0;
   padding: 0;
 }
-#home, #contact, #portfolio{
+#home, #contact{
  flex: 1;
 }
-#portfolio {
+.mobile-portfolio {
   /* desktop only */
+  width: 60%;
 }
 #portfolio-wrapper {
-  /* width: 100%;
+  width: 100%;
   display: flex;
-  justify-content: center; */
+  justify-content: center;
 }
 html {
   background-color:black;
