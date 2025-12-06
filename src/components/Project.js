@@ -19,7 +19,7 @@ function Project (props) {
             style={isMobile && {width: width, marginTop: '5px'}}
         >
             <div>
-                <p style={{fontSize: '20px', backgroundColor: 'blue', width: 'min-content', padding: '10px'}}>{title}</p>
+                <p style={{fontSize: '20px', backgroundColor: 'rgba(255, 191, 0, 0.3)', width: 'min-content', padding: '10px'}}>{title}</p>
                 <p style={{fontSize: '15px'}}>{subtitle}</p>
             </div>
         </motion.a>

@@ -116,8 +116,16 @@ h1 {
   margin: 0;
   padding: 0;
 }
-#home, #contact, #portfolio {
+#home, #contact, #portfolio{
  flex: 1;
+}
+#portfolio {
+  /* desktop only */
+}
+#portfolio-wrapper {
+  /* width: 100%;
+  display: flex;
+  justify-content: center; */
 }
 html {
   background-color:black;
@@ -167,8 +175,9 @@ a.active {
   display: flex;
   justify-content: center;
   h1 {
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 1);
     font-size: x-large;
+    padding: 20px;
   }
 }
 #portfolio-card {

@@ -11,8 +11,8 @@ const Box = () => {
     useFrame(() => {
       // boxRef.current.rotation.x += mouse.y / 30;
       // boxRef.current.rotation.y += mouse.x / 30;
-      boxRef.current.rotation.y += 0.005;
-      boxRef.current.rotation.x += 0.01;
+      boxRef.current.rotation.y += 0.001;
+      boxRef.current.rotation.x += 0.001;
 
 
       // console.log(mouse.x*10);
@@ -20,7 +20,7 @@ const Box = () => {
     });
 
     return (
-        <mesh scale={Math.min(viewport.width, viewport.height) / 5} ref={boxRef}>
+        <mesh scale={Math.min(viewport.width, viewport.height) / 3.8} ref={boxRef}>
             <torusKnotGeometry args={[1, 0.2, 128, 32]} />
             <meshStandardMaterial  color={"white"} />
         </mesh>
