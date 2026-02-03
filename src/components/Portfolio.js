@@ -19,6 +19,11 @@ function Portfolio () {
                     subtitle={'Shopify ecommerce website'} 
                     link={'https://www.szade.jp/'}
                 />
+                <Project 
+                    title={'Myu Beauty'}
+                    subtitle={'Wordpress beauty salon website'} 
+                    link={'https://staging-0a0b-myubeauty32580c9eaf.wpcomstaging.com/'}
+                />
                 <Project
                     title={'Responsive Coding Challenge'}
                     subtitle={'fully responsive pure html/css'} 
