@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import AnimatedRoute from "./components/AnimatedRoute";
-import myResume from "./static/GabrielRangelResume2024.pdf";
+import myResume from "./static/GabrielRangelResume.pdf";
 
 import { easeInOut, motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
