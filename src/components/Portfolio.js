@@ -15,7 +15,12 @@ function Portfolio () {
                 exit={{opacity: 0}}
             >
                 <Project 
-                    title={'Szade Sunglasses Website'}
+                    title={'Ritual Vision Sunglasses'}
+                    subtitle={'Shopify ecommerce website'} 
+                    link={'https://ritual-vision.jp/'}
+                />
+                <Project 
+                    title={'Szade Sunglasses'}
                     subtitle={'Shopify ecommerce website'} 
                     link={'https://www.szade.jp/'}
                 />
