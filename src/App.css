@@ -6,7 +6,7 @@
 
 }
 #root {
-  padding: 2vh 2vw;
+  /* padding: 2vh 2vw; */
 }
 
 html,
@@ -19,19 +19,29 @@ body,
 }
 
 #app-container{ /* add ,main, #canvas */
-  position: relative;
+  /* position: relative; adds a border */ 
   display: flex;
   flex-direction: column;
 }
 #title, #navbar, #main, #portfolio {
   z-index: 1;
 }
+#title {
+  background-color: black;
+  width: fit-content;
+  padding: 20px;
+  margin: 2vh 2vw;
+
+}
 #mobile-title {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: flex-start;
   align-items: center;
+  background-color: black;
+  width: fit-content;
+  padding: 20px;
   /* flex: 1; */
 }
 .mobile-main {
@@ -55,15 +65,18 @@ body,
   z-index: 2;
   align-content: center;
   height: inherit;
+  margin: 2vh 2vw;
   a {
     margin: 2vh 0;
-    color: grey;
+    color: lightyellow;
     width: fit-content;
     font-size: x-large;
     letter-spacing: 1px;
+    background-color: black;
+    padding: 5px;
   }
   a:hover {
-    color: white;
+    color: lightblue;
     cursor: cell;
    }
 }
@@ -79,13 +92,15 @@ body,
   align-items: center;
   a {
     margin: 2vh;
-    color: grey;
+    color: lightyellow;
     width: fit-content;
     font-size: large;
     letter-spacing: 1px;
+    background-color: black;
+    padding: 5px;
   }
   a:hover {
-    color: white;
+    color: lightblue;
     cursor: cell;
    }
   /* flex: 1; */
@@ -152,6 +167,7 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 html {
   background-color:black;

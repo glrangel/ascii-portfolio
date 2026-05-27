@@ -20,7 +20,7 @@ const Box = () => {
     });
 
     return (
-        <mesh scale={Math.min(viewport.width, viewport.height) / 3.8} ref={boxRef}>
+        <mesh scale={Math.min(viewport.width, viewport.height) / 3.9} ref={boxRef}>
             <torusKnotGeometry args={[1, 0.2, 128, 32]} />
             <meshStandardMaterial  color={"white"} />
         </mesh>
@@ -32,8 +32,8 @@ const Background = () => {
 
   return (
     <Canvas id="canvas" style={{position: "absolute"}}>
-        <color attach="background" args={['black']} />
-        <AsciiRenderer fgColor="white" bgColor="transparent" resolution='0.15'/>
+        <color attach="background" args={['lightyellow']} />
+        <AsciiRenderer fgColor="lightyellow" bgColor="transparent" resolution='0.15'/>
         {/* <ambientLight position={[0, 0, 0]} /> */}
         <directionalLight
           position={[0,0,1]}

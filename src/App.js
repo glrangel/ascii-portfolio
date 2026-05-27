@@ -27,9 +27,9 @@ const isMobile = useMediaQuery({ query: '(max-width: 1000px)' });
         <h1 style={{color: "grey", fontSize: isMobile && "xx-large"}}>gabriel rangel</h1>
         <h1 style={{color: "#179ff4", fontSize: isMobile && "x-large"}}>fullstack web developer </h1>
       </div>
-      <div id="route-name">
+      {/* <div id="route-name">
         <h1>{useLocation().pathname.split("")}</h1>
-      </div>
+      </div> */}
       {/* <AnimatedRoute text={useLocation().pathname.split("")}/> */}
       <div id="main" class={isDesktop ? "absolute" : "overflow-main mobile-main"}>
         <nav id={isDesktop ? "navbar" : "mobile-navbar"} class={isDesktop && "absolute"}>
